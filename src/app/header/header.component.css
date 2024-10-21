@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  font-family: cursive;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav h1 a {
+  color: #8CB9BD; /* Light teal color */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: -100px;
+}
+
+.nav-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 2rem;
+  border-radius: 20px;
+}
+
+.nav-search input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  flex-grow: 1;
+}
+
+.nav-search button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #006769; /* Light teal color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-search button:hover {
+  background-color: #006769; /* Darker teal color */
+}
+
+.suggested-search {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-search li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggested-search li:hover {
+  background-color: #f1f1f1;
+}
+
+.suggested-search a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  color: #006769; /* Light teal color */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #8CB9BD; /* Light teal color */
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  ul li a {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .nav-search input[type="text"] {
+    width: calc(100% - 3rem);
+  }
+
+  .nav-search button {
+    width: 3rem;
+    padding: 0.5rem;
+  }
+
+  .suggested-search {
+    width: calc(100% - 1rem);
+  }
+}

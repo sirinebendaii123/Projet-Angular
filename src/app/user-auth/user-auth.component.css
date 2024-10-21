@@ -1,0 +1,88 @@
+body {
+    font-family: cursive;
+    background-color: #f4f4f9;
+    margin-top: 200px;
+   margin-left: 1000px;
+    box-sizing: border-box;
+   
+}
+
+.user-auth {
+    margin-top: 100px;
+    margin-left: 500px;
+    font-family: cursive;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 20px 20px  20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-auth h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #006769;
+    font-family: cursive;
+}
+
+.user-auth a {
+    color: #006769;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.user-auth a:hover {
+    color: #009a9d;
+}
+
+.common-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.form-button {
+    text-align: center;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #006769;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-button:disabled {
+    background-color: #009a9d;
+    cursor: not-allowed;
+}
+
+.form-button:hover:not(:disabled) {
+    background-color: #009a9d;
+    transform: scale(1.05);
+}
+
+.invalid-input {
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.error-p {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 15px;
+}

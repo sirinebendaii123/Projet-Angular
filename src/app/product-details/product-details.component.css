@@ -1,0 +1,147 @@
+body {
+    font-family: cursive;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-details {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.8em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.product-color-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-color-section span {
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-color {
+    border: 2px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.product-category {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.form-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button {
+    background-color: #006769;
+    color: #fff;
+}
+
+.primary-button:hover {
+    background-color: #006769;
+    transform: scale(1.05);
+}
+
+.success-button {
+    background-color: #E88D67;
+    color: #fff;
+}
+
+.success-button:hover {
+    background-color: #E88D67;
+    transform: scale(1.05);
+}
+
+.danger-button {
+    background-color: #E88D67;
+    color: #fff;
+}
+
+.danger-button:hover {
+    background-color: #E88D67;
+    transform: scale(1.05);
+}
+
+.quantity-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quantity-button:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.05);
+}
+
+.quantity-input {
+    padding: 12px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}

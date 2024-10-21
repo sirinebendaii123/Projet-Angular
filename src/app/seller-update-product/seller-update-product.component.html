@@ -1,0 +1,67 @@
+<div class="add-product">
+  <h1>Update Product</h1>
+  <p class="message-p">{{productMessage}}</p>
+  <form #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)" class="common-form">
+      <div class="form-group">
+          <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Name"
+              name="name"
+              ngModel="{{productData?.name}}"
+              required
+          />
+      </div>
+      <div class="form-group">
+          <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Price"
+              name="price"
+              ngModel="{{productData?.price}}"
+              required
+          />
+      </div>
+      <div class="form-group">
+          <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Category"
+              name="category"
+              ngModel="{{productData?.category}}"
+              required
+          />
+      </div>
+      <div class="form-group">
+          <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Color"
+              name="color"
+              ngModel="{{productData?.color}}"
+              required
+          />
+      </div>
+      <div class="form-group">
+          <textarea
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Description"
+              name="description"
+              ngModel="{{productData?.description}}"
+              required
+          ></textarea>
+      </div>
+      <div class="form-group">
+          <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Product Image URL"
+              name="image"
+              ngModel="{{productData?.image}}"
+              required
+          />
+      </div>
+      <button type="submit" class="form-button">Update Product</button>
+  </form>
+</div>
